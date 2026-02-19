@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercise1", "exercise1\exercise1.csproj", "{86EF768D-5083-4AB0-B1B6-008FB0004837}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "project1", "project1\project1.csproj", "{BACC6E50-EC0F-4893-B454-D68FB28A0B7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,18 @@ Global
 		{86EF768D-5083-4AB0-B1B6-008FB0004837}.Release|x64.Build.0 = Release|Any CPU
 		{86EF768D-5083-4AB0-B1B6-008FB0004837}.Release|x86.ActiveCfg = Release|Any CPU
 		{86EF768D-5083-4AB0-B1B6-008FB0004837}.Release|x86.Build.0 = Release|Any CPU
+		{BACC6E50-EC0F-4893-B454-D68FB28A0B7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BACC6E50-EC0F-4893-B454-D68FB28A0B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BACC6E50-EC0F-4893-B454-D68FB28A0B7A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BACC6E50-EC0F-4893-B454-D68FB28A0B7A}.Debug|x64.Build.0 = Debug|Any CPU
+		{BACC6E50-EC0F-4893-B454-D68FB28A0B7A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BACC6E50-EC0F-4893-B454-D68FB28A0B7A}.Debug|x86.Build.0 = Debug|Any CPU
+		{BACC6E50-EC0F-4893-B454-D68FB28A0B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BACC6E50-EC0F-4893-B454-D68FB28A0B7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BACC6E50-EC0F-4893-B454-D68FB28A0B7A}.Release|x64.ActiveCfg = Release|Any CPU
+		{BACC6E50-EC0F-4893-B454-D68FB28A0B7A}.Release|x64.Build.0 = Release|Any CPU
+		{BACC6E50-EC0F-4893-B454-D68FB28A0B7A}.Release|x86.ActiveCfg = Release|Any CPU
+		{BACC6E50-EC0F-4893-B454-D68FB28A0B7A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
