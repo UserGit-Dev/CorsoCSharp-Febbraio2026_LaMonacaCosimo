@@ -37,14 +37,14 @@ class Program
         foreach (int i in vector) { sum += i; }
         Console.WriteLine($"La somma totale è: { sum }");
         Console.Write("\nPremi un qualsiasi tasto per continuare!");
-        Console.ReadKey();
+        Console.ReadKey(true);
         Console.Clear();
     }
 
     public static void ExerciseTwo()
     {   
         Console.WriteLine($"Premi un qualsiasi tasto per generare 10 numeri casuali (tra 0 e 100).");
-        Console.ReadKey();
+        Console.ReadKey(true);
         Random random = new();
         int[] vector = new int[10];
 
@@ -66,7 +66,7 @@ class Program
         Console.WriteLine($"\nNumeri generati: {string.Join(", ", vector)}");
         Console.WriteLine($"Min: {min}\nMax: {max}");
         Console.Write("\nPremi un qualsiasi tasto per continuare!");
-        Console.ReadKey();
+        Console.ReadKey(true);
         Console.Clear();
     }
 
@@ -113,7 +113,7 @@ class Program
         Console.WriteLine($"\nArray originale: {string.Join(", ", vector)}");
         Console.WriteLine($"Array invertito: {string.Join(", ", inverseVector)}");
         Console.Write("\nPremi un qualsiasi tasto per continuare!");
-        Console.ReadKey();
+        Console.ReadKey(true);
         Console.Clear();
     }
 
@@ -182,7 +182,7 @@ class Program
         // 3. Stampa totale generale
         Console.WriteLine($"\nSomma totale di tutti gli elementi: {sommaTotale}");
         Console.Write("\nPremi un qualsiasi tasto per continuare!");
-        Console.ReadKey();
+        Console.ReadKey(true);
         Console.Clear();
     }
 
@@ -252,14 +252,14 @@ class Program
 
         Console.WriteLine($"Vincitore assoluto: {(punteggioMatrix1 > punteggioMatrix2 ? "Matrice 1" : "Matrice 2")}");
         Console.Write("\nPremi un qualsiasi tasto per continuare!");
-        Console.ReadKey();
+        Console.ReadKey(true);
         Console.Clear();
     }
 
     public static void ExerciseSix()
     {
         Console.WriteLine($"Premi un qualsiasi tasto per generare matrice 5x5 con numeri casuali (tra 1 e 20).");
-        Console.ReadKey();
+        Console.ReadKey(true);
         Console.WriteLine();
         Random random = new();
         int[,] matrix = new int[5,5];
@@ -306,7 +306,7 @@ class Program
         Console.WriteLine($"\nRisultati\nDiagonale principale (totale): {diagMain}\nDiagonale secondaria (totale): {diagSec}\n");
         Console.WriteLine($"Maggiore: {(diagMain > diagSec ? "Diagonale principale" : "Diagonale secondaria")}");
         Console.Write("\nPremi un qualsiasi tasto per continuare!");
-        Console.ReadKey();
+        Console.ReadKey(true);
         Console.Clear();
     }
 }
