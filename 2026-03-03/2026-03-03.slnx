@@ -5,7 +5,6 @@
   <Project Path="prj1/prj1.csproj" />
   <Project Path="prj2/prj2.csproj" />
   <Project Path="prj3/prj3.csproj" />
-  <Project Path="prj4/prj4.csproj" />
   <Project Path="prova1/prova1.csproj" />
   <Project Path="prova2/prova2.csproj" />
 </Solution>
