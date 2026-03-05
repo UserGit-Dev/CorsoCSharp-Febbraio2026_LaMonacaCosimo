@@ -1,5 +1,5 @@
 enum TipoFigura
 {
-    Amministratore,
-    Dipendente
+    Amministratore = 1,
+    Dipendente = 2,
 }
