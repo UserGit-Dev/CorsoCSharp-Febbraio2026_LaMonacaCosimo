@@ -1,12 +1,9 @@
-﻿enum TipoFigura
+﻿class Program : ConsoleUtility
 {
-    Amministratore,
-    Dipendente
-}
+    static List<Dipendente> listDipendente = [
+        new Dipendente("Franco", "Paoli", "FRNPO", DateOnly.Parse("2000-12-12"), 1, TipoFigura.Amministratore, "BADGE", "PASSWORD", "Mattina", 1500),
+    ];
 
-class Program : IConsoleUtility
-{
-    static List<Dipendente> listDipendente = [];
     public static void Main()
     {
         bool flag = true;
@@ -23,13 +20,14 @@ class Program : IConsoleUtility
             {
                 case 1:
                     Console.Clear();
-                    Validazione(TipoFigura.Amministratore);
+                    ValidazioneDipendente(TipoFigura.Amministratore);
                     break;
                 case 2:
                     Console.Clear();
-                    Validazione(TipoFigura.Dipendente);                
+                    ValidazioneDipendente(TipoFigura.Dipendente);                
                     break;
                 case 3:
+                    flag = false;
                     Console.Clear();
                     Console.WriteLine("Sessione terminata.");
                     ContinueAndClear();
@@ -38,7 +36,7 @@ class Program : IConsoleUtility
         }
     }
 
-    public static void ValidazioneDipendente(TipoFigura tipoFigura)
+    public static void ValidazioneDipendente(TipoFigura tipoScelto)
     {
         if (listDipendente.Count is 0) {
             Console.Clear();
@@ -47,7 +45,7 @@ class Program : IConsoleUtility
             return;
         }
 
-        Operatore dipendeteTrovato = new();
+        Dipendente? dipendeteTrovato = null;
         string badgeCode;
         
         do {
@@ -63,7 +61,7 @@ class Program : IConsoleUtility
             return;
         }
 
-        if (tipoFigura is TipoFigura.Amministratore) {
+        if (tipoScelto is TipoFigura.Amministratore) {
             string password;
 
             do {
@@ -74,17 +72,19 @@ class Program : IConsoleUtility
             
             foreach(Dipendente dipendente in listDipendente)
             {
-                if (string.Equals(dipendente.BadgeCode, badgeCode, StringComparison.OrdinalIgnoreCase) 
-                && string.Equals(dipendente.Password,password, StringComparison.OrdinalIgnoreCase)) 
+                if (dipendente.Ruolo is TipoFigura.Amministratore 
+                    && string.Equals(dipendente.BadgeCode, badgeCode, StringComparison.OrdinalIgnoreCase) 
+                    && string.Equals(dipendente.Password,password)) 
                 { 
                     dipendeteTrovato = dipendente;
                     break; 
                 }
             }
-        } else if (tipoFigura is TipoFigura.Dipendente) {
+        } else if (tipoScelto is TipoFigura.Dipendente) {
             foreach(Dipendente dipendente in listDipendente)
             {
-                if (string.Equals(dipendente.BadgeCode, badgeCode, StringComparison.OrdinalIgnoreCase)) 
+                if (dipendente.Ruolo is TipoFigura.Dipendente 
+                    && string.Equals(dipendente.BadgeCode, badgeCode, StringComparison.OrdinalIgnoreCase)) 
                 { 
                     dipendeteTrovato = dipendente;
                     break; 
@@ -99,14 +99,14 @@ class Program : IConsoleUtility
             return;
         }
 
-        switch (tipoFigura)
+        switch (dipendeteTrovato.Ruolo)
         {
             case TipoFigura.Amministratore:
                 Console.Clear();
-                Console.WriteLine("Procedura di accesso sicuro validato con successo.");
+                Console.WriteLine("Procedura di accesso sicuro validata con successo.");
                 ContinueAndClear();
                 break;
-            case TipoFigura.Amministratore:
+            case TipoFigura.Dipendente:
                 Console.Clear();
                 Console.WriteLine("Badge validato con successo.");
                 ContinueAndClear();

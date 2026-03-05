@@ -1,6 +1,7 @@
 class Dipendente : Persona
 {
     private long _id;
+    private TipoFigura _ruolo;
     private string _badgeCode = string.Empty;
     private string _password = string.Empty;
     private string _turno = string.Empty;
@@ -8,6 +9,7 @@ class Dipendente : Persona
     private bool _isPresent = false;
 
     public long Id { get => _id; set => _id = value; }
+    public TipoFigura Ruolo { get => _ruolo; set => _ruolo = value; }
     public string BadgeCode { get => _badgeCode; set => _badgeCode = value; }
     public string Password { get => _password; set => _password = value; }
     public string Turno { get => _turno; set => _turno = value; }
@@ -15,9 +17,9 @@ class Dipendente : Persona
     public bool IsPresent { get => _isPresent; set => _isPresent = value; }
 
     public Dipendente(string nome, string cognome, string codiceFiscale, DateOnly dataNascita, 
-        long id, string badgeCode, string password, string turno, decimal salario) : base(nome, cognome, codiceFiscale, dataNascita)
+        long id, TipoFigura ruolo, string badgeCode, string password, string turno, decimal salario) : base(nome, cognome, codiceFiscale, dataNascita)
     {
-        Id = id; BadgeCode = badgeCode; Password = password; Turno = turno; Salario = salario;
+        Id = id; Ruolo = ruolo; BadgeCode = badgeCode; Password = password; Turno = turno; Salario = salario;
     }
 
     public string PrintAnagraficaDipendente()

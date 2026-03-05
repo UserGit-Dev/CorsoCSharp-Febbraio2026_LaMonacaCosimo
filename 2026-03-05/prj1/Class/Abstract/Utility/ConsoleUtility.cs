@@ -1,4 +1,4 @@
-interface IConsoleUtility
+abstract class ConsoleUtility
 {
     public static void ContinueAndClear()
     {

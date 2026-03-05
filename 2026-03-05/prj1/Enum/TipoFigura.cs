@@ -1,0 +1,5 @@
+enum TipoFigura
+{
+    Amministratore,
+    Dipendente
+}
