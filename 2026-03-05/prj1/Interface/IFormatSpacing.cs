@@ -1,4 +1,4 @@
 interface IFormatSpacing
 {
-    protected static string TxtSpacing();
+    string TxtSpacing();
 }

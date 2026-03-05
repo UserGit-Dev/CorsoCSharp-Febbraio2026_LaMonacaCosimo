@@ -22,7 +22,7 @@ class Persona : IFormatSpacing
     }
 
     // Altro
-    protected static string TxtSpacing()
+    public string TxtSpacing()
     {
         byte leftPad = 5;
         byte rightPad = 5;
