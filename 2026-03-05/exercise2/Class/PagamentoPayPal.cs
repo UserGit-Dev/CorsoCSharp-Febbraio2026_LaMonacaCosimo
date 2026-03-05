@@ -6,7 +6,7 @@ class PagamentoPayPal : AnagraficaBase, IPagamento
     public PagamentoPayPal(string nome, string email) : base(nome) { EmailUtente = email; }
 
     public void EseguiPagamento(decimal import) { 
-        Console.WriteLine($"Pagamento di {import} euro in tramite PayPal da: {EmailUtente}"); 
+        Console.WriteLine($"Nome: {Nome} => Pagamento di {import} euro in tramite PayPal da: {EmailUtente}"); 
     }
     public void MostraPagamento(){ Console.WriteLine("Metodo: PayPal"); }
 }

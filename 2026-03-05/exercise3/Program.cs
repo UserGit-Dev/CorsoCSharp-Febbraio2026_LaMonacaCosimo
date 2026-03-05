@@ -13,7 +13,6 @@
                 Console.Clear();
                 Console.WriteLine("Seleziona:\n1. Crea corso in presenza\n2. Crea corso online\n" 
                     + "3. Stampa i corsi\n4. (Esci)");
-
             } while (!int.TryParse(Console.ReadLine()!, out scelta) || scelta is < 1 or > 4);
 
             switch (scelta)

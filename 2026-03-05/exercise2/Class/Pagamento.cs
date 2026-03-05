@@ -6,7 +6,7 @@ public class Pagamento : AnagraficaBase, IPagamento
     public Pagamento(string nome, string circuito) : base(nome) { Circuito = circuito; }
     
     public void EseguiPagamento(decimal import) { 
-        Console.WriteLine($"Pagamento di {import} euro con carta (Circuito: {Circuito})"); 
+        Console.WriteLine($"Nome: {Nome} => Pagamento di {import} euro con carta (Circuito: {Circuito})"); 
     }
     public void MostraPagamento(){ Console.WriteLine("Metodo: Carta di credito"); }
 }
