@@ -2,8 +2,10 @@
 {
     static List<Dipendente> listDipendente = [
         new Dipendente("DEBUG", "NULL", "NULL", DateOnly.Parse("2000-01-01"), 1, TipoFigura.Amministratore, "1", "1", "NULL", 0),
-        new Dipendente("Franco", "Paoli", "FRNPO", DateOnly.Parse("2000-12-12"), 1, TipoFigura.Amministratore, "BADGE", "PASSWORD", "Mattina", 1500),
+        new Dipendente("Francesco", "Landi", "FRNLND00", DateOnly.Parse("2000-12-12"), 1, TipoFigura.Dipendente, "2", "2", "Mattina", 1500),
     ];
+
+    static Dictionary<long, Queue<string>> dLog = [];
 
     public static void Main()
     {
@@ -47,7 +49,8 @@
         }
 
         Dipendente? dipendeteTrovato = null;
-        string badgeCode;
+        string badgeCode; // Amministratore/Dipendente
+        string password; // Amministratore (Ulteriore controllo)
         
         do {
             Console.Clear();
@@ -63,8 +66,6 @@
         }
 
         if (tipoScelto is TipoFigura.Amministratore) {
-            string password;
-
             do {
                 Console.Clear();
                 Console.WriteLine("Inserisci la tua password: ");
@@ -78,7 +79,6 @@
                     && string.Equals(dipendente.Password,password)) 
                 { 
                     dipendeteTrovato = dipendente;
-                    dipendeteTrovato.IsPresent = true;
                     break; 
                 }
             }
@@ -89,7 +89,6 @@
                     && string.Equals(dipendente.BadgeCode, badgeCode, StringComparison.OrdinalIgnoreCase)) 
                 { 
                     dipendeteTrovato = dipendente;
-                    dipendeteTrovato.IsPresent = true;
                     break; 
                 }
             }
@@ -105,21 +104,56 @@
         switch (dipendeteTrovato.Ruolo)
         {
             case TipoFigura.Amministratore:
+                dipendeteTrovato.IsActive = true;
+                dipendeteTrovato.LastLoginUpdate();
+                AddLog(dipendeteTrovato, TipoLog.Login);
                 Console.Clear();
                 Console.WriteLine("Protocollo di accesso sicuro terminato con successo.");
                 ContinueAndClear();
                 DashboardAmministratore(dipendeteTrovato);
                 break;
             case TipoFigura.Dipendente:
+                dipendeteTrovato.IsActive = true;
+                dipendeteTrovato.LastLoginUpdate();
+                AddLog(dipendeteTrovato, TipoLog.Login);
                 Console.Clear();
                 Console.WriteLine("Integrità del badge verificata. Accesso concesso.");
                 ContinueAndClear();
+                DashboardDipendente(dipendeteTrovato);
                 break;
             default:
                 Console.Clear();
                 Console.WriteLine("Errore, tipo figura non riconosciuta dal sistema.");
                 ContinueAndClear();
                 break;
+        }
+    }
+
+    public static void DashboardDipendente(Dipendente dipendente)
+    {
+        bool flag = true;
+
+        while(flag)
+        {
+            int scelta;
+
+            do
+            {
+                Console.Clear();
+                Console.WriteLine(new string('*', 5) + " TERMINALE " + new string('*', 5));
+                Console.WriteLine(dipendente.ToPrintToDash());
+                Console.WriteLine("\nSeleziona:\n1. Modifica (Dati)\n2. Visualizza (Profilo)\n3. Visualizza (Log)\n4. (Logout)");
+            } while (!int.TryParse(Console.ReadLine()!, out scelta) || scelta is < 1 or > 4);
+
+            switch (scelta)
+            {
+
+                case 4:
+                    flag = false;
+                    Logout(dipendente);
+                    ContinueAndClear();
+                    break;
+            }
         }
     }
 
@@ -134,10 +168,10 @@
             do
             {
                 Console.Clear();
-                Console.WriteLine(new string('*', 5) + " TERMINALE DI AMMINISTRAZIONE " + new string('*', 5));
+                Console.WriteLine(new string('*', 5) + " TERMINALE " + new string('*', 5));
                 Console.WriteLine(dipendente.ToPrintToDash());
-                Console.WriteLine("\nSeleziona:\n1. Aggiungi dipendente\n2. Visualizza dipendenti\n3. (Logout)");
-            } while (!int.TryParse(Console.ReadLine()!, out scelta) || scelta is < 1 or > 3);
+                Console.WriteLine("\nSeleziona:\n1. Aggiungi dipendente\n2. Visualizza (Dipendenti)\n3. Visualizza (Log)\n4. (Logout)");
+            } while (!int.TryParse(Console.ReadLine()!, out scelta) || scelta is < 1 or > 4);
 
             switch (scelta)
             {
@@ -197,7 +231,6 @@
                         Console.Clear();
                         Console.Write("Inserisci il salario: ");
                     } while (!decimal.TryParse(Console.ReadLine(), out salario) || salario < 0);
-
                     listDipendente.Add(new Dipendente(nome, cognome, codiceFiscale, dataNascita, id, ruolo, badgeCode, password, turno, salario));
                     Console.WriteLine("Dipendente aggiunto con successo.");
                     ContinueAndClear();
@@ -207,7 +240,7 @@
                     
                     do {
                         Console.Clear();
-                        Console.WriteLine("Seleziona:\n1. Lista persona (Info)\n2. Lista dipendente (Info)\n3. Lista persona/dipendente (Info)\n4. (Annulla)");
+                        Console.WriteLine("Seleziona:\n1. Lista info (Persone)\n2. Lista info (Dipendenti)\n3. Lista info (Persone/Dipendenti)\n4. (Annulla)");
                     } while (!int.TryParse(Console.ReadLine()!, out c2scelta) || c2scelta is < 1 or > 4);
                     
                     switch (c2scelta)
@@ -244,13 +277,76 @@
                     }
                     break;
                 case 3:
-                    dipendente.IsPresent = false;
-                    flag = false;
                     Console.Clear();
-                    Console.WriteLine("Logout effettuato con successo.");
+                    if (!dLog.TryGetValue(dipendente.Id, out var coda) || coda.Count is 0) { Console.WriteLine("Storico log attualmente vuoto."); }
+                    else { foreach(string log in coda) { Console.WriteLine(log); } }
+                    AddLog(dipendente, TipoLog.Logout);
                     ContinueAndClear();
                     break;
+                case 4:
+                    flag = false;
+                    Logout(dipendente);
+                    AddLog(dipendente, TipoLog.Logout);
+                    break;
             }
+        }
+    }
+
+    public static void Logout(Dipendente dipendente)
+    {
+        dipendente.IsActive = false;
+        dipendente.LastLogoutUpdate();
+        Console.Clear();
+        Console.WriteLine("Logout effettuato con successo.");
+    }
+
+    public static void AddLog(Dipendente dipendente, TipoLog type)
+    {
+        string timestamp = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss");
+        
+        if (!dLog.TryGetValue(dipendente.Id, out var coda)) 
+        { 
+            coda = new Queue<string>();
+            dLog[dipendente.Id] = coda;
+        }
+
+        if(coda.Count >= 30) { coda.Dequeue(); }
+
+        switch (type)
+        {
+            case TipoLog.Login:
+                coda.Enqueue($"{coda.Count+1}. Data: {timestamp}\t===>\tEffettuato il login.");
+                break;
+            case TipoLog.Logout:
+                coda.Enqueue($"{coda.Count+1}. Data: {timestamp}\t===>\tEffettuato il logout.");
+                break;
+            case TipoLog.CreazioneDipendente:
+                coda.Enqueue($"{coda.Count+1}. Data: {timestamp}\t===>\tEffettuato creazione dipendente.");
+                break;
+            case TipoLog.ModificaDipendente:
+                coda.Enqueue($"{coda.Count+1}. Data: {timestamp}\t===>\tEffettuato modifica dipendente.");
+                break;
+            case TipoLog.ModificaDatiPersonali:
+                coda.Enqueue($"{coda.Count+1}. Data: {timestamp}\t===>\tEffettuato modifica dati personali.");
+                break;
+            case TipoLog.LetturaLog:
+                coda.Enqueue($"{coda.Count+1}. Data: {timestamp}\t===>\tEffettuato lettura log.");
+                break;
+            case TipoLog.LetturaInfoPersonali:
+                coda.Enqueue($"{coda.Count+1}. Data: {timestamp}\t===>\tEffettuato lettura info personali.");
+                break;
+            case TipoLog.LetturaInfoPersone:
+                coda.Enqueue($"{coda.Count+1}. Data: {timestamp}\t===>\tEffettuato info persone.");
+                break;
+            case TipoLog.LetturaInfoDipendenti:
+                coda.Enqueue($"{coda.Count+1}. Data: {timestamp}\t===>\tEffettuato info dipendenti.");
+                break;
+            case TipoLog.LetturaInfoPersoneAndDipendenti:
+                coda.Enqueue($"{coda.Count+1}. Data: {timestamp}\t===>\tEffettuato info persone+dipendenti.");
+                break;
+            default:
+                coda.Enqueue($"{coda.Count+1}. Data: {timestamp}\t===>\t[ERRORE] Tipo log non riconosciuto.");
+                break;
         }
     }
 }
