@@ -1,0 +1,15 @@
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\provaFactoryMethod\bin\Debug\net10.0\provaFactoryMethod.exe
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\provaFactoryMethod\bin\Debug\net10.0\provaFactoryMethod.deps.json
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\provaFactoryMethod\bin\Debug\net10.0\provaFactoryMethod.runtimeconfig.json
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\provaFactoryMethod\bin\Debug\net10.0\provaFactoryMethod.dll
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\provaFactoryMethod\bin\Debug\net10.0\provaFactoryMethod.pdb
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\provaFactoryMethod\obj\Debug\net10.0\provaFactoryMethod.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\provaFactoryMethod\obj\Debug\net10.0\provaFactoryMethod.AssemblyInfoInputs.cache
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\provaFactoryMethod\obj\Debug\net10.0\provaFactoryMethod.AssemblyInfo.cs
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\provaFactoryMethod\obj\Debug\net10.0\provaFactoryMethod.csproj.CoreCompileInputs.cache
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\provaFactoryMethod\obj\Debug\net10.0\provaFactoryMethod.sourcelink.json
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\provaFactoryMethod\obj\Debug\net10.0\provaFactoryMethod.dll
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\provaFactoryMethod\obj\Debug\net10.0\refint\provaFactoryMethod.dll
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\provaFactoryMethod\obj\Debug\net10.0\provaFactoryMethod.pdb
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\provaFactoryMethod\obj\Debug\net10.0\provaFactoryMethod.genruntimeconfig.cache
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\provaFactoryMethod\obj\Debug\net10.0\ref\provaFactoryMethod.dll

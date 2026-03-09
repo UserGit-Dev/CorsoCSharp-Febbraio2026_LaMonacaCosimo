@@ -1,0 +1,15 @@
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\exercise6\obj\Debug\net10.0\exercise6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\exercise6\obj\Debug\net10.0\exercise6.AssemblyInfoInputs.cache
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\exercise6\obj\Debug\net10.0\exercise6.AssemblyInfo.cs
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\exercise6\obj\Debug\net10.0\exercise6.csproj.CoreCompileInputs.cache
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\exercise6\obj\Debug\net10.0\exercise6.sourcelink.json
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\exercise6\bin\Debug\net10.0\exercise6.exe
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\exercise6\bin\Debug\net10.0\exercise6.deps.json
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\exercise6\bin\Debug\net10.0\exercise6.runtimeconfig.json
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\exercise6\bin\Debug\net10.0\exercise6.dll
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\exercise6\bin\Debug\net10.0\exercise6.pdb
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\exercise6\obj\Debug\net10.0\exercise6.dll
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\exercise6\obj\Debug\net10.0\refint\exercise6.dll
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\exercise6\obj\Debug\net10.0\exercise6.pdb
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\exercise6\obj\Debug\net10.0\exercise6.genruntimeconfig.cache
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-09\exercise6\obj\Debug\net10.0\ref\exercise6.dll

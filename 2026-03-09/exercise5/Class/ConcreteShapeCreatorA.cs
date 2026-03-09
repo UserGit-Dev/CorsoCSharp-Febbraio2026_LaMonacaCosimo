@@ -1,0 +1,4 @@
+class ConcreteShapeCreatorA : ShapeCreator
+{
+    
+}
