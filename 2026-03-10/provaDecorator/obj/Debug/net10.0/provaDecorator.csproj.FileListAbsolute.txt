@@ -1,0 +1,15 @@
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaDecorator\bin\Debug\net10.0\provaDecorator.exe
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaDecorator\bin\Debug\net10.0\provaDecorator.deps.json
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaDecorator\bin\Debug\net10.0\provaDecorator.runtimeconfig.json
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaDecorator\bin\Debug\net10.0\provaDecorator.dll
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaDecorator\bin\Debug\net10.0\provaDecorator.pdb
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaDecorator\obj\Debug\net10.0\provaDecorator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaDecorator\obj\Debug\net10.0\provaDecorator.AssemblyInfoInputs.cache
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaDecorator\obj\Debug\net10.0\provaDecorator.AssemblyInfo.cs
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaDecorator\obj\Debug\net10.0\provaDecorator.csproj.CoreCompileInputs.cache
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaDecorator\obj\Debug\net10.0\provaDecorator.sourcelink.json
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaDecorator\obj\Debug\net10.0\provaDecorator.dll
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaDecorator\obj\Debug\net10.0\refint\provaDecorator.dll
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaDecorator\obj\Debug\net10.0\provaDecorator.pdb
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaDecorator\obj\Debug\net10.0\provaDecorator.genruntimeconfig.cache
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaDecorator\obj\Debug\net10.0\ref\provaDecorator.dll

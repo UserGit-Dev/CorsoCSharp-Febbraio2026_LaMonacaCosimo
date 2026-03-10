@@ -3,5 +3,7 @@
   <Project Path="exercise2/exercise2.csproj" />
   <Project Path="exercise3/exercise3.csproj" />
   <Project Path="exercise5/exercise5.csproj" />
+  <Project Path="exercise6/exercise6.csproj" />
+  <Project Path="provaDecorator/provaDecorator.csproj" />
   <Project Path="provaObserver/provaObserver.csproj" />
 </Solution>
