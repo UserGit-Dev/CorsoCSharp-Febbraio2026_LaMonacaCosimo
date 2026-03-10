@@ -1,0 +1,15 @@
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaObserver\bin\Debug\net10.0\provaObserver.exe
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaObserver\bin\Debug\net10.0\provaObserver.deps.json
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaObserver\bin\Debug\net10.0\provaObserver.runtimeconfig.json
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaObserver\bin\Debug\net10.0\provaObserver.dll
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaObserver\bin\Debug\net10.0\provaObserver.pdb
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaObserver\obj\Debug\net10.0\provaObserver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaObserver\obj\Debug\net10.0\provaObserver.AssemblyInfoInputs.cache
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaObserver\obj\Debug\net10.0\provaObserver.AssemblyInfo.cs
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaObserver\obj\Debug\net10.0\provaObserver.csproj.CoreCompileInputs.cache
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaObserver\obj\Debug\net10.0\provaObserver.sourcelink.json
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaObserver\obj\Debug\net10.0\provaObserver.dll
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaObserver\obj\Debug\net10.0\refint\provaObserver.dll
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaObserver\obj\Debug\net10.0\provaObserver.pdb
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaObserver\obj\Debug\net10.0\provaObserver.genruntimeconfig.cache
+C:\Users\Work\Documents\GitHub\CorsoCSharp-Febbraio2026_LaMonacaCosimo\2026-03-10\provaObserver\obj\Debug\net10.0\ref\provaObserver.dll
