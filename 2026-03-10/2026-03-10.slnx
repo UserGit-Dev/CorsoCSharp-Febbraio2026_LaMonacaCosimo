@@ -2,5 +2,6 @@
   <Project Path="exercise1/exercise1.csproj" />
   <Project Path="exercise2/exercise2.csproj" />
   <Project Path="exercise3/exercise3.csproj" />
+  <Project Path="exercise5/exercise5.csproj" />
   <Project Path="provaObserver/provaObserver.csproj" />
 </Solution>
