@@ -1,0 +1,4 @@
+class MoltiplicazioneStrategia : IStrategiaOperazione
+{
+    public double Calcola(double a, double b) => a * b;
+}
